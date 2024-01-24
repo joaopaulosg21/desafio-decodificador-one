@@ -4,14 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Desafio Decodificador</title>
 </head>
 
 <body>
-    Entrada : <input type="text" id="input">
-    Saida : <input type="text" id="output" disabled>
-    <button onclick="criptografar()">Criptografar</button>
-    <button onclick="descriptografar()">Descriptografar</button>
+    <div class="container">
+
+        <div class="text-input">
+            <div class="text-area">
+                <textarea name="" class="textBox" id = 'input' placeholder="Digite seu texto"></textarea>
+                <div class="buttons">
+                    <button class="criptografar" onclick="criptografar()"> Criptografar</button>
+                    <button class="descriptografar" onclick="descriptografar()"> Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div id="text-output">
+            <p id="textResult"></p>
+            <div id="img-output">
+                <img src="../img/ouput-img.svg" alt="">
+                <div class="text">
+                    <p id="title">Nenhuma mensagem
+                    <p id="find">encontrada </p>
+                    </p>
+                    <p id="subtitle">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 

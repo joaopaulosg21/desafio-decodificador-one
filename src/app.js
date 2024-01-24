@@ -1,5 +1,4 @@
 let input = document.getElementById('input');
-let output = document.getElementById('output');
 
 const keys = {
     'e': 'enter',
@@ -10,6 +9,7 @@ const keys = {
 };
 
 function criptografar() {
+    removeImage();
     let text = input.value;
 
     text = text.replaceAll('e', keys['e'])
@@ -18,10 +18,11 @@ function criptografar() {
         .replaceAll('o', keys['o'])
         .replaceAll('u', keys['u']);
 
-    output.value = text;
+    createTextBox(text);
 }
 
 function descriptografar() {
+    removeImage()
     let text = input.value;
 
     text = text.replaceAll(keys['e'], 'e')
@@ -30,5 +31,16 @@ function descriptografar() {
         .replaceAll(keys['o'], 'o')
         .replaceAll(keys['u'], 'u');
 
-    output.value = text;
+    createTextBox(text);
+}
+
+function removeImage() {
+    let outputImage = document.getElementById('img-output');
+    outputImage.style.display = 'none';
+}
+
+function createTextBox(text) {
+    let textBox = document.getElementById('textResult');
+    textBox.style.display = 'block';
+    textBox.innerHTML = text;
 }
