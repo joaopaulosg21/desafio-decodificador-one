@@ -9,31 +9,23 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="text-input">
-            <div class="text-area">
-                <textarea name="" class="textBox" id = 'input' placeholder="Digite seu texto"></textarea>
-                <div class="buttons">
-                    <button class="criptografar" onclick="criptografar()"> Criptografar</button>
-                    <button class="descriptografar" onclick="descriptografar()"> Descriptografar</button>
-                </div>
+    <header></header>
+    <main>
+        <div class="input-area">
+            <textarea id="input" placeholder="Digite seu texto"></textarea>
+            <span> <img src="../img/icon.svg" alt="Icone" id="icon">Apenas letras minúsculas e sem acento.</span>
+            <div class="buttons">
+                <button class="action-button criptografar-button" onclick="criptografar()">Criptografar</button>
+                <button class="action-button descriptografar-button">Descriptografar</button>
             </div>
         </div>
-        <div id="text-output">
-            <p id="textResult"></p>
-            <div id="img-output">
-                <img src="../img/ouput-img.svg" alt="">
-                <div class="text">
-                    <p id="title">Nenhuma mensagem
-                    <p id="find">encontrada </p>
-                    </p>
-                    <p id="subtitle">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
+        <div class="output-area">
+            <textarea id="textResult" cols="30" rows="10"></textarea>
+            <img src="../img/ouput-img.svg" alt="Imagem que aparece caso não haja texto" id="img-output">
+            <img src="../img/output-text.svg" alt="Imagem com um texto caso não haja texto escrito na tela" id="output-text">
+        </div>
+    </main>
     <script src="app.js"></script>
 </body>
 

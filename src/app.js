@@ -18,7 +18,7 @@ function criptografar() {
         .replaceAll('o', keys['o'])
         .replaceAll('u', keys['u']);
 
-    createTextBox(text);
+    OutputBox(text);
 }
 
 function descriptografar() {
@@ -31,16 +31,19 @@ function descriptografar() {
         .replaceAll(keys['o'], 'o')
         .replaceAll(keys['u'], 'u');
 
-    createTextBox(text);
+    OutputBox(text);
 }
 
 function removeImage() {
     let outputImage = document.getElementById('img-output');
+    let outputText = document.getElementById('output-text');
     outputImage.style.display = 'none';
+    outputText.style.display = 'none';
 }
 
-function createTextBox(text) {
+function OutputBox(text) {
     let textBox = document.getElementById('textResult');
     textBox.style.display = 'block';
+    textBox.style.backgroundColor = 'white';
     textBox.innerHTML = text;
 }

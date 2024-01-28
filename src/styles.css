@@ -1,122 +1,103 @@
 body {
     background: #F3F5FC;
-}
-
-.container {
-    width: 99vw;
-    height: 95vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header {
-    height: 50px;
-    width: 100%;
-}
-
-#text-output {
-    background: white;
-    width: 20%;
-    height: 95%;
-    align-self: center;
-    border-radius: 5%;
-    margin-right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.output-img {
-    width: 150px;
+header {
+    width: 10%;
+    height: 100px;
+    background-color: red;
 }
 
-.text {
+main {
+    margin-left: 20%;
+    display: flex;
+    gap: 15%;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    position: relative;
     width: 100%;
-}
-
-#title {
-    font-weight: bold;
-    font-size: 24px;
-    margin-left: 18%;
-    margin-bottom: -10%;
-}
-
-#find {
-    font-weight: bold;
-    font-size: 24px;
-    margin-left: 34%;
-    margin-bottom: -1%;
-}
-
-#subtitle {
-    font-size: 16px;
-    margin-left: 18%;
-}
-
-.text-input {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-area {
-    height: 70%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    height: 85%;
+    resize: none;
+    font-size: 1.4rem;
+    outline-style: none;
+    border-style: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    margin-top: 10%;
 }
 
 .buttons {
-    width: 60%;
     display: flex;
-    justify-content: space-evenly;
-    align-self: center;
+    gap: 5%;
 }
 
-.criptografar {
-    width: 250px;
-    height: 50px;
-    background-color: #0A3871;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.descriptografar {
-    width: 250px;
-    height: 50px;
-    background-color: #D8DFE8;
-    justify-content: center;
-    align-items: center;
-    color: #0A3871;
-    border-radius: 15px;
-    border: 1px solid #0A3871;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-.textBox {
-    box-sizing: border-box;
-    resize: none;
-    background-color: #F3F5FC;
-    font-size: 32px;
-    color: #0A3871;
-    height: 50px;
+.action-button {
+    width: 200px;
+    height: 40px;
     border-style: none;
-    outline: none;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.criptografar-button {
+    background: #0A3871;
+    color: white;
+}
+
+.descriptografar-button {
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.output-area {
+    width: 40%;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 3px 20px rgb(188, 187, 187);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#img-output {
+    position: relative;
+    width: 60%;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+#output-text {
+    position: relative;
+    width: 70%;
+}
+
+span {
+    display: flex;
+    gap: 1%;
+    margin-bottom: 2%;
+    font-size: 12px;
+    color: #495057;
+}
+
+#icon {
+    width: 12px;
 }
 
 #textResult {
-    color: #0A3871;
-    font-size: 32px;
-    font-weight: bold;
-    align-self: center;
-    margin-bottom: 100%;
     display: none;
+    color: #495057;
+    margin-left: 8%;
+    height: 70%;
 }
