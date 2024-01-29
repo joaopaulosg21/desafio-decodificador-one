@@ -155,7 +155,14 @@ span {
 
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
+
+    body {
+        align-items: center;
+    }
+    main {
+        margin-left: 18%;
+    }
     .buttons {
         flex-direction: column;
         gap: 24px;
