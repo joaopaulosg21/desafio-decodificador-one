@@ -4,28 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Desafio Decodificador</title>
 </head>
 
 <body>
     <header>
-        <img src="../img/logo.svg" alt="Imagem de um logo" id="img-log">
+        <img src="img/logo.svg" alt="Imagem de um logo" id="img-log">
     </header>
     <main>
         <section class="input-area">
             <textarea id="input" placeholder="Digite seu texto"></textarea>
-            <span> <img src="../img/icon.svg" alt="Imagem com um icone de um simbolo de exclamação" id="icon">Apenas letras minúsculas e sem acento.</span>
+            <span> <img src="img/icon.svg" alt="Imagem com um icone de um simbolo de exclamação" id="icon">Apenas letras minúsculas e sem acento.</span>
             <div class="buttons">
                 <button class="action-button criptografar-button" onclick="criptografar()">Criptografar</button>
-                <button class="action-button descriptografar-button">Descriptografar</button>
+                <button class="action-button descriptografar-button" onclick="descriptografar()">Descriptografar</button>
             </div>
         </section>
 
         <section class="output-area">
             <textarea id="textResult" cols="30" rows="10" disabled></textarea>
             <button class="action-button descriptografar-button" id="copy-button" onclick="copyText()">Copiar</button>
-            <img src="../img/ouput-img.svg" alt="Imagem que aparece caso não haja texto" id="img-output">
+            <img src="img/ouput-img.svg" alt="Imagem que aparece caso não haja texto" id="img-output">
             <div id="output-text">
                 <h1>Nenhuma mensagem encontrada</h1>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
@@ -34,7 +34,7 @@
     </main>
     <footer>
     </footer>
-    <script src="app.js"></script>
+    <script src="./src/app.js"></script>
 </body>
 
 </html>
