@@ -9,23 +9,31 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <img src="../img/logo.svg" alt="Imagem de um logo" id="img-log">
+    </header>
     <main>
-        <div class="input-area">
+        <section class="input-area">
             <textarea id="input" placeholder="Digite seu texto"></textarea>
-            <span> <img src="../img/icon.svg" alt="Icone" id="icon">Apenas letras minúsculas e sem acento.</span>
+            <span> <img src="../img/icon.svg" alt="Imagem com um icone de um simbolo de exclamação" id="icon">Apenas letras minúsculas e sem acento.</span>
             <div class="buttons">
                 <button class="action-button criptografar-button" onclick="criptografar()">Criptografar</button>
                 <button class="action-button descriptografar-button">Descriptografar</button>
             </div>
-        </div>
+        </section>
 
-        <div class="output-area">
-            <textarea id="textResult" cols="30" rows="10"></textarea>
+        <section class="output-area">
+            <textarea id="textResult" cols="30" rows="10" disabled></textarea>
+            <button class="action-button descriptografar-button" id="copy-button" onclick="copyText()">Copiar</button>
             <img src="../img/ouput-img.svg" alt="Imagem que aparece caso não haja texto" id="img-output">
-            <img src="../img/output-text.svg" alt="Imagem com um texto caso não haja texto escrito na tela" id="output-text">
-        </div>
+            <div id="output-text">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
     </main>
+    <footer>
+    </footer>
     <script src="app.js"></script>
 </body>
 

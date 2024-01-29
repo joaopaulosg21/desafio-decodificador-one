@@ -1,4 +1,5 @@
 let input = document.getElementById('input');
+let textBox = document.getElementById('textResult');
 
 const keys = {
     'e': 'enter',
@@ -42,8 +43,15 @@ function removeImage() {
 }
 
 function OutputBox(text) {
-    let textBox = document.getElementById('textResult');
+    let button = document.getElementById('copy-button');
+
     textBox.style.display = 'block';
     textBox.style.backgroundColor = 'white';
     textBox.innerHTML = text;
+    button.style.display = 'block';
+}
+
+function copyText() {
+    navigator.clipboard.writeText(textBox.value);
+    alert('Texto copiado com sucesso!');
 }
