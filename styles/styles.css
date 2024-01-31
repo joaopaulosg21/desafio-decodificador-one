@@ -12,19 +12,16 @@ body {
     background: var(--cor-secundaria);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    justify-content: space-around;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 header {
     width: 10%;
-    height: 100px;
+    height: 7%;
     box-sizing: border-box;
     display: flex;
-    margin-top: -10%;
-    margin-left: -2%;
 }
 
 main {
@@ -32,6 +29,7 @@ main {
     gap: 15%;
     padding: 0% 10%;
     margin-left: 5%;
+    margin-top: 5%;
 }
 
 .input-area {
@@ -48,6 +46,11 @@ textarea {
     border-style: none;
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
+}
+
+#input {
+    margin-top: 10%;
+    height: 60%;
 }
 
 .buttons {
@@ -146,6 +149,10 @@ span {
         margin-left: 0%;
     }
 
+    body {
+        align-items: center;
+    }
+
     header {
         margin-top: 0%;
         margin-left: 0%;
@@ -171,6 +178,11 @@ span {
 
     .action-button {
         width: 332px;
+    }
+
+    #input {
+        margin-top: 0%;
+        height: 100%;
     }
 
 }
