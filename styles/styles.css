@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    overflow: hidden;
+    overflow: auto;
     box-sizing: border-box;
     margin-top:2%;
 }
