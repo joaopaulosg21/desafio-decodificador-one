@@ -185,6 +185,11 @@ span {
         height: 100%;
     }
 
+    #copy-button {
+        width: 70%;
+        height: 40px;
+    }
+
 }
 
 @media (max-width:500px) {
@@ -194,7 +199,7 @@ span {
     }
 
     main {
-        margin-left: 25%;
+        margin-left: 20%;
     }
 
     header {
@@ -208,7 +213,7 @@ span {
     }
 
     .action-button {
-        width: 70%;
+        width: 90%;
         height: 50px;
     }
 
@@ -221,13 +226,11 @@ span {
     }
 
     .output-area {
-        width: 70%;
-        margin-left: -30%;
+        width: 90%;
+        margin-left: -10%;
     }
 
     #copy-button {
-        width: 200px;
-        height: 40px;
         background-color: white;
     }
 }
