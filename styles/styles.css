@@ -30,8 +30,9 @@ textarea {
 
 .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     box-sizing: border-box;
+    gap: 5%;
 }
 
 .content__input {
@@ -64,7 +65,7 @@ textarea {
 }
 
 .content__buttons__logo {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 .content__buttons__logo img{
@@ -83,42 +84,47 @@ textarea {
 }
 
 .content__output {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     border-radius: 32px;
     background: var(--cor-output-area);
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .content__output__textarea {
+    width: 90%;
+    height: 70%;
     display: none;
-    padding: 10%;
-    border-radius: 32px;
     background-color: #0A3871;
     color: var(--cor-texto);
 }
 
-#copy-button {
+.content__output_copy {
     display: none;
+    background: var(--cor-output-area);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
 }
 
 .content__output__img {
     width: 60%;
-    padding: 10% 0% 15% 20%;
+    padding: 10%;
 }
 
 .content__output__text {
     display: flex;
     flex-direction: column;
+    padding: 0% 25%;
 }
 
 .content__output__text h1 {
     font-size: 1.5rem;
-    padding: 0% 20%;
 }
 
 .content__output__text p {
     font-size: 1rem;
-    padding: 0% 20%;
     margin-top: -3%;
 }
