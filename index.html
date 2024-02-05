@@ -9,24 +9,29 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.svg" alt="Imagem de um logo" id="img-log">
+    <header class="header">
+        <img src="img/logo.svg" alt="Imagem de um logo" class="header__img">
     </header>
-    <main>
-        <section class="input-area">
-            <textarea id="input" placeholder="Digite seu texto"></textarea>
-            <span> <img src="img/icon.svg" alt="Imagem com um icone de um simbolo de exclamação" id="icon">Apenas letras minúsculas e sem acento.</span>
-            <div class="buttons">
-                <button class="action-button criptografar-button" onclick="criptografar()">Criptografar</button>
-                <button class="action-button descriptografar-button" onclick="descriptografar()">Descriptografar</button>
+    <main class="content">
+        <section class="content__input">
+            <textarea class="content__input__textarea" id="input" placeholder="Digite seu texto"></textarea>
+            <div class="content__buttons">
+                <span class="content__buttons__logo"> <img src="img/icon.svg" alt="Imagem com um icone de um simbolo de exclamação"> Apenas letras minúsculas e sem acento.</span>
+                <div class="content__buttons__actions">
+                    <button class="action-buttons content__buttons__criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="action-buttons content__buttons__descriptografar"
+                        onclick="descriptografar()">Descriptografar</button>
+                </div>
             </div>
+
         </section>
 
-        <section class="output-area">
-            <textarea id="textResult" cols="30" rows="10" disabled></textarea>
-            <button class="action-button descriptografar-button" id="copy-button" onclick="copyText()">Copiar</button>
-            <img src="img/ouput-img.svg" alt="Imagem que aparece caso não haja texto" id="img-output">
-            <div id="output-text">
+        <section class="content__output">
+            <textarea class="content__output__textarea" id="textResult" cols="30" rows="10" disabled></textarea>
+            <button class="action-buttons" id="copy-button" onclick="copyText()">Copiar</button>
+            <img src="img/ouput-img.svg" alt="Imagem que aparece caso não haja texto" id="img-output"
+                class="content__output__img">
+            <div id="output-text" class="content__output__text">
                 <h1>Nenhuma mensagem encontrada</h1>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
