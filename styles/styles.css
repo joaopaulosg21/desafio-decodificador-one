@@ -10,6 +10,8 @@
 
 body {
     background: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
 }
 
 textarea {
@@ -26,6 +28,10 @@ textarea {
     border-radius: 15px;
     font-size: 0.7rem;
     cursor: pointer;
+}
+
+.header {
+    padding: 1%;
 }
 
 .content {
@@ -111,7 +117,7 @@ textarea {
 
 .content__output__img {
     width: 60%;
-    padding: 10%;
+    padding: 5%;
 }
 
 .content__output__text {
