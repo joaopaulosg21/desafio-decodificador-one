@@ -183,7 +183,7 @@ textarea {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     textarea {
         font-size: 1.5rem;
     }
@@ -208,7 +208,7 @@ textarea {
 
     .content__output {
         width: 80%;
-        height: 450px;
+        height: auto;
     }
 
     .content__output__textarea {
