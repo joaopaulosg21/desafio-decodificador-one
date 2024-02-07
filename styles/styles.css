@@ -187,6 +187,7 @@ textarea {
     textarea {
         font-size: 1.5rem;
     }
+
     .action-buttons {
         width: auto;
     }
@@ -197,7 +198,8 @@ textarea {
 
     .content__input__textarea {
         padding: 5%;
-        height: 200px;
+        height: 300px;
+        width: auto;
     }
 
     .content__buttons__actions {
