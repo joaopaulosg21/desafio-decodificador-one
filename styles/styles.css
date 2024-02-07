@@ -15,7 +15,6 @@ body {
 }
 
 textarea {
-    font-size: 2rem;
     resize: none;
     border-style: none;
     color: var(--cor-primaria);
@@ -31,7 +30,7 @@ textarea {
 }
 
 .header {
-    padding: 1%;
+    padding: 2% 0% 0% 0%;
 }
 
 .content {
@@ -51,6 +50,7 @@ textarea {
 .content__input__textarea {
     width: 100%;
     height: 50%;
+    font-size: 2rem;
     outline-color: var(--cor-terciaria);
     background-color: var(--cor-secundaria);
 }
@@ -74,7 +74,7 @@ textarea {
     font-size: 0.8rem;
 }
 
-.content__buttons__logo img{
+.content__buttons__logo img {
     width: 2%;
 }
 
@@ -106,6 +106,7 @@ textarea {
     display: none;
     background-color: #0A3871;
     color: var(--cor-texto);
+    font-size: 1.5rem;
 }
 
 .content__output_copy {
@@ -124,6 +125,7 @@ textarea {
     display: flex;
     flex-direction: column;
     padding: 0% 25%;
+    text-align: center;
 }
 
 .content__output__text h1 {
@@ -133,4 +135,87 @@ textarea {
 .content__output__text p {
     font-size: 1rem;
     margin-top: -3%;
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .action-buttons {
+        width: 70%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .content__input {
+        width: 80%;
+    }
+
+    .content__input__textarea {
+        width: 100%;
+        height: 300px;
+    }
+
+    .content__output {
+        width: 80%;
+        height: 200px;
+    }
+
+    .content__output__textarea {
+        height: 60%;
+        font-size: 1.2rem;
+    }
+
+    .content__output__img {
+        display: none;
+    }
+
+    .content__output__text {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 375px) {
+    textarea {
+        font-size: 1.5rem;
+    }
+    .action-buttons {
+        width: auto;
+    }
+
+    .content {
+        gap: 0;
+    }
+
+    .content__input__textarea {
+        padding: 5%;
+        height: 200px;
+    }
+
+    .content__buttons__actions {
+        flex-direction: column;
+        gap: 24px;
+        height: 134px;
+    }
+
+    .content__output {
+        width: 80%;
+        height: 450px;
+    }
+
+    .content__output__textarea {
+        height: 70%;
+    }
+
+    .content__output_copy {
+        width: 70%;
+    }
 }
