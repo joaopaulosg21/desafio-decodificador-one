@@ -52,6 +52,14 @@ function OutputBox(text) {
 }
 
 function copyText() {
-    navigator.clipboard.writeText(textBox.value);
-    alert('Texto copiado com sucesso!');
+    let textBox = document.getElementById('textResult');
+    textBox.select();
+    textBox.setSelectionRange(0,99999);
+    navigator.clipboard.writeText(textBox.value).then(() => {
+        console.log("Texto copiado")
+    },() => {
+        alert("Erro ao copiar texto");
+    });
+    
+    alert('Texto copiado com sucesso: ' + textBox.value);
 }
